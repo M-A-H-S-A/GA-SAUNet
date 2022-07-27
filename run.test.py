@@ -14,7 +14,6 @@ import configparser
 config = configparser.RawConfigParser()
 config.readfp(open(r'./configuration.txt'))
 #===========================================
-#name of the experiment!!
 name_experiment = config.get('experiment name', 'name')
 nohup = config.getboolean('testing settings', 'nohup')   #std output on log file?
 
@@ -34,7 +33,7 @@ else:
 # finally run the prediction
 if nohup:
     print( "\n2. Run the prediction on GPU  with nohup")
-    os.system(run_GPU +' nohup python3 -u ./Predict.py > ' +'./'+name_experiment+'/'+name_experiment+'_prediction.nohup')
+    os.system(run_GPU +' nohup python3 -u ./Test.py > ' +'./'+name_experiment+'/'+name_experiment+'_prediction.nohup')
 else:
     print( "\n2. Run the prediction on GPU (no nohup)")
-    os.system(run_GPU +' python3 ./Predict.py')
+    os.system(run_GPU +' python3 ./Test.py')
