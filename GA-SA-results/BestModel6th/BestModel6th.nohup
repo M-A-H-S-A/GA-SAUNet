@@ -1,0 +1,578 @@
+2022-05-09 15:10:58.814675: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Start:  2022-05-09 15:11:00
+2022-05-09 15:11:00.243664: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-05-09 15:11:00.244437: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2022-05-09 15:11:00.270572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-05-09 15:11:00.270606: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-05-09 15:11:00.273992: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-05-09 15:11:00.274054: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2022-05-09 15:11:00.275246: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-05-09 15:11:00.275530: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-05-09 15:11:00.278492: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-05-09 15:11:00.279470: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2022-05-09 15:11:00.279628: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-05-09 15:11:00.280015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-05-09 15:11:00.280395: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-09 15:11:00.282196: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2022-05-09 15:11:00.282410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:d8:00.0 name: Quadro RTX 8000 computeCapability: 7.5
+coreClock: 1.62GHz coreCount: 72 deviceMemorySize: 44.49GiB deviceMemoryBandwidth: 581.23GiB/s
+2022-05-09 15:11:00.282428: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-05-09 15:11:00.282447: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-05-09 15:11:00.282457: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2022-05-09 15:11:00.282468: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2022-05-09 15:11:00.282478: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2022-05-09 15:11:00.282488: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2022-05-09 15:11:00.282498: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2022-05-09 15:11:00.282508: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-05-09 15:11:00.282729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2022-05-09 15:11:00.282755: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2022-05-09 15:11:00.770804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2022-05-09 15:11:00.770879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2022-05-09 15:11:00.770885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2022-05-09 15:11:00.771655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 42526 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:d8:00.0, compute capability: 7.5)
+2022-05-09 15:11:03.169108: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-05-09 15:11:03.169152: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-05-09 15:11:03.169176: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1365] Profiler found 1 GPUs
+2022-05-09 15:11:03.169982: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcupti.so.11.0
+2022-05-09 15:11:03.337062: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-05-09 15:11:03.337224: I tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1487] CUPTI activity buffer flushed
+---->(None, 37, 37, 1)
+Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 592, 592, 3) 0                                            
+__________________________________________________________________________________________________
+conv2d (Conv2D)                 (None, 592, 592, 16) 432         input_1[0][0]                    
+__________________________________________________________________________________________________
+batch_normalization (BatchNorma (None, 592, 592, 16) 64          conv2d[0][0]                     
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, 592, 592, 16) 2304        batch_normalization[0][0]        
+__________________________________________________________________________________________________
+batch_normalization_1 (BatchNor (None, 592, 592, 16) 64          conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+drop_block2d (DropBlock2D)      (None, 592, 592, 16) 700928      batch_normalization_1[0][0]      
+__________________________________________________________________________________________________
+max_pooling2d (MaxPooling2D)    (None, 296, 296, 16) 0           drop_block2d[0][0]               
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, 296, 296, 32) 4608        max_pooling2d[0][0]              
+__________________________________________________________________________________________________
+batch_normalization_2 (BatchNor (None, 296, 296, 32) 128         conv2d_2[0][0]                   
+__________________________________________________________________________________________________
+conv2d_3 (Conv2D)               (None, 296, 296, 32) 9216        batch_normalization_2[0][0]      
+__________________________________________________________________________________________________
+batch_normalization_3 (BatchNor (None, 296, 296, 32) 128         conv2d_3[0][0]                   
+__________________________________________________________________________________________________
+drop_block2d_1 (DropBlock2D)    (None, 296, 296, 32) 175232      batch_normalization_3[0][0]      
+__________________________________________________________________________________________________
+max_pooling2d_1 (MaxPooling2D)  (None, 148, 148, 32) 0           drop_block2d_1[0][0]             
+__________________________________________________________________________________________________
+conv2d_4 (Conv2D)               (None, 148, 148, 64) 18432       max_pooling2d_1[0][0]            
+__________________________________________________________________________________________________
+batch_normalization_4 (BatchNor (None, 148, 148, 64) 256         conv2d_4[0][0]                   
+__________________________________________________________________________________________________
+conv2d_5 (Conv2D)               (None, 148, 148, 64) 36864       batch_normalization_4[0][0]      
+__________________________________________________________________________________________________
+batch_normalization_5 (BatchNor (None, 148, 148, 64) 256         conv2d_5[0][0]                   
+__________________________________________________________________________________________________
+drop_block2d_2 (DropBlock2D)    (None, 148, 148, 64) 43808       batch_normalization_5[0][0]      
+__________________________________________________________________________________________________
+max_pooling2d_2 (MaxPooling2D)  (None, 74, 74, 64)   0           drop_block2d_2[0][0]             
+__________________________________________________________________________________________________
+conv2d_6 (Conv2D)               (None, 74, 74, 128)  73728       max_pooling2d_2[0][0]            
+__________________________________________________________________________________________________
+batch_normalization_6 (BatchNor (None, 74, 74, 128)  512         conv2d_6[0][0]                   
+__________________________________________________________________________________________________
+conv2d_7 (Conv2D)               (None, 74, 74, 128)  147456      batch_normalization_6[0][0]      
+__________________________________________________________________________________________________
+batch_normalization_7 (BatchNor (None, 74, 74, 128)  512         conv2d_7[0][0]                   
+__________________________________________________________________________________________________
+drop_block2d_3 (DropBlock2D)    (None, 74, 74, 128)  10952       batch_normalization_7[0][0]      
+__________________________________________________________________________________________________
+max_pooling2d_3 (MaxPooling2D)  (None, 37, 37, 128)  0           drop_block2d_3[0][0]             
+__________________________________________________________________________________________________
+conv2d_8 (Conv2D)               (None, 37, 37, 256)  295168      max_pooling2d_3[0][0]            
+__________________________________________________________________________________________________
+drop_block2d_4 (DropBlock2D)    (None, 37, 37, 256)  2738        conv2d_8[0][0]                   
+__________________________________________________________________________________________________
+batch_normalization_8 (BatchNor (None, 37, 37, 256)  1024        drop_block2d_4[0][0]             
+__________________________________________________________________________________________________
+activation (Activation)         (None, 37, 37, 256)  0           batch_normalization_8[0][0]      
+__________________________________________________________________________________________________
+lambda (Lambda)                 (None, 37, 37, 1)    0           activation[0][0]                 
+__________________________________________________________________________________________________
+lambda_1 (Lambda)               (None, 37, 37, 1)    0           activation[0][0]                 
+__________________________________________________________________________________________________
+concatenate (Concatenate)       (None, 37, 37, 2)    0           lambda[0][0]                     
+                                                                 lambda_1[0][0]                   
+__________________________________________________________________________________________________
+conv2d_9 (Conv2D)               (None, 37, 37, 1)    98          concatenate[0][0]                
+__________________________________________________________________________________________________
+multiply (Multiply)             (None, 37, 37, 256)  0           activation[0][0]                 
+                                                                 conv2d_9[0][0]                   
+__________________________________________________________________________________________________
+conv2d_10 (Conv2D)              (None, 37, 37, 256)  590080      multiply[0][0]                   
+__________________________________________________________________________________________________
+drop_block2d_5 (DropBlock2D)    (None, 37, 37, 256)  2738        conv2d_10[0][0]                  
+__________________________________________________________________________________________________
+batch_normalization_9 (BatchNor (None, 37, 37, 256)  1024        drop_block2d_5[0][0]             
+__________________________________________________________________________________________________
+activation_1 (Activation)       (None, 37, 37, 256)  0           batch_normalization_9[0][0]      
+__________________________________________________________________________________________________
+conv2d_11 (Conv2D)              (None, 37, 37, 256)  589824      activation_1[0][0]               
+__________________________________________________________________________________________________
+batch_normalization_10 (BatchNo (None, 37, 37, 256)  1024        conv2d_11[0][0]                  
+__________________________________________________________________________________________________
+conv2d_12 (Conv2D)              (None, 37, 37, 256)  589824      batch_normalization_10[0][0]     
+__________________________________________________________________________________________________
+batch_normalization_11 (BatchNo (None, 37, 37, 256)  1024        conv2d_12[0][0]                  
+__________________________________________________________________________________________________
+conv2d_transpose (Conv2DTranspo (None, 74, 74, 128)  131200      batch_normalization_11[0][0]     
+__________________________________________________________________________________________________
+conv2d_13 (Conv2D)              (None, 74, 74, 128)  16512       batch_normalization_7[0][0]      
+__________________________________________________________________________________________________
+conv2d_14 (Conv2D)              (None, 74, 74, 128)  16512       conv2d_transpose[0][0]           
+__________________________________________________________________________________________________
+add (Add)                       (None, 74, 74, 128)  0           conv2d_13[0][0]                  
+                                                                 conv2d_14[0][0]                  
+__________________________________________________________________________________________________
+activation_2 (Activation)       (None, 74, 74, 128)  0           add[0][0]                        
+__________________________________________________________________________________________________
+conv2d_15 (Conv2D)              (None, 74, 74, 1)    129         activation_2[0][0]               
+__________________________________________________________________________________________________
+activation_3 (Activation)       (None, 74, 74, 1)    0           conv2d_15[0][0]                  
+__________________________________________________________________________________________________
+multiply_1 (Multiply)           (None, 74, 74, 128)  0           batch_normalization_7[0][0]      
+                                                                 activation_3[0][0]               
+__________________________________________________________________________________________________
+concatenate_1 (Concatenate)     (None, 74, 74, 256)  0           conv2d_transpose[0][0]           
+                                                                 multiply_1[0][0]                 
+__________________________________________________________________________________________________
+drop_block2d_6 (DropBlock2D)    (None, 74, 74, 256)  10952       concatenate_1[0][0]              
+__________________________________________________________________________________________________
+conv2d_16 (Conv2D)              (None, 74, 74, 128)  294912      drop_block2d_6[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_12 (BatchNo (None, 74, 74, 128)  512         conv2d_16[0][0]                  
+__________________________________________________________________________________________________
+conv2d_17 (Conv2D)              (None, 74, 74, 128)  147456      batch_normalization_12[0][0]     
+__________________________________________________________________________________________________
+batch_normalization_13 (BatchNo (None, 74, 74, 128)  512         conv2d_17[0][0]                  
+__________________________________________________________________________________________________
+conv2d_transpose_1 (Conv2DTrans (None, 148, 148, 64) 32832       batch_normalization_13[0][0]     
+__________________________________________________________________________________________________
+conv2d_18 (Conv2D)              (None, 148, 148, 64) 4160        batch_normalization_5[0][0]      
+__________________________________________________________________________________________________
+conv2d_19 (Conv2D)              (None, 148, 148, 64) 4160        conv2d_transpose_1[0][0]         
+__________________________________________________________________________________________________
+add_1 (Add)                     (None, 148, 148, 64) 0           conv2d_18[0][0]                  
+                                                                 conv2d_19[0][0]                  
+__________________________________________________________________________________________________
+activation_4 (Activation)       (None, 148, 148, 64) 0           add_1[0][0]                      
+__________________________________________________________________________________________________
+conv2d_20 (Conv2D)              (None, 148, 148, 1)  65          activation_4[0][0]               
+__________________________________________________________________________________________________
+activation_5 (Activation)       (None, 148, 148, 1)  0           conv2d_20[0][0]                  
+__________________________________________________________________________________________________
+multiply_2 (Multiply)           (None, 148, 148, 64) 0           batch_normalization_5[0][0]      
+                                                                 activation_5[0][0]               
+__________________________________________________________________________________________________
+concatenate_2 (Concatenate)     (None, 148, 148, 128 0           conv2d_transpose_1[0][0]         
+                                                                 multiply_2[0][0]                 
+__________________________________________________________________________________________________
+drop_block2d_7 (DropBlock2D)    (None, 148, 148, 128 43808       concatenate_2[0][0]              
+__________________________________________________________________________________________________
+conv2d_21 (Conv2D)              (None, 148, 148, 64) 73728       drop_block2d_7[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_14 (BatchNo (None, 148, 148, 64) 256         conv2d_21[0][0]                  
+__________________________________________________________________________________________________
+conv2d_22 (Conv2D)              (None, 148, 148, 64) 36864       batch_normalization_14[0][0]     
+__________________________________________________________________________________________________
+batch_normalization_15 (BatchNo (None, 148, 148, 64) 256         conv2d_22[0][0]                  
+__________________________________________________________________________________________________
+conv2d_transpose_2 (Conv2DTrans (None, 296, 296, 32) 8224        batch_normalization_15[0][0]     
+__________________________________________________________________________________________________
+conv2d_23 (Conv2D)              (None, 296, 296, 32) 1056        batch_normalization_3[0][0]      
+__________________________________________________________________________________________________
+conv2d_24 (Conv2D)              (None, 296, 296, 32) 1056        conv2d_transpose_2[0][0]         
+__________________________________________________________________________________________________
+add_2 (Add)                     (None, 296, 296, 32) 0           conv2d_23[0][0]                  
+                                                                 conv2d_24[0][0]                  
+__________________________________________________________________________________________________
+activation_6 (Activation)       (None, 296, 296, 32) 0           add_2[0][0]                      
+__________________________________________________________________________________________________
+conv2d_25 (Conv2D)              (None, 296, 296, 1)  33          activation_6[0][0]               
+__________________________________________________________________________________________________
+activation_7 (Activation)       (None, 296, 296, 1)  0           conv2d_25[0][0]                  
+__________________________________________________________________________________________________
+multiply_3 (Multiply)           (None, 296, 296, 32) 0           batch_normalization_3[0][0]      
+                                                                 activation_7[0][0]               
+__________________________________________________________________________________________________
+concatenate_3 (Concatenate)     (None, 296, 296, 64) 0           conv2d_transpose_2[0][0]         
+                                                                 multiply_3[0][0]                 
+__________________________________________________________________________________________________
+drop_block2d_8 (DropBlock2D)    (None, 296, 296, 64) 175232      concatenate_3[0][0]              
+__________________________________________________________________________________________________
+conv2d_26 (Conv2D)              (None, 296, 296, 32) 18432       drop_block2d_8[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_16 (BatchNo (None, 296, 296, 32) 128         conv2d_26[0][0]                  
+__________________________________________________________________________________________________
+conv2d_27 (Conv2D)              (None, 296, 296, 32) 9216        batch_normalization_16[0][0]     
+__________________________________________________________________________________________________
+batch_normalization_17 (BatchNo (None, 296, 296, 32) 128         conv2d_27[0][0]                  
+__________________________________________________________________________________________________
+conv2d_transpose_3 (Conv2DTrans (None, 592, 592, 16) 2064        batch_normalization_17[0][0]     
+__________________________________________________________________________________________________
+conv2d_28 (Conv2D)              (None, 592, 592, 16) 272         batch_normalization_1[0][0]      
+__________________________________________________________________________________________________
+conv2d_29 (Conv2D)              (None, 592, 592, 16) 272         conv2d_transpose_3[0][0]         
+__________________________________________________________________________________________________
+add_3 (Add)                     (None, 592, 592, 16) 0           conv2d_28[0][0]                  
+                                                                 conv2d_29[0][0]                  
+__________________________________________________________________________________________________
+activation_8 (Activation)       (None, 592, 592, 16) 0           add_3[0][0]                      
+__________________________________________________________________________________________________
+conv2d_30 (Conv2D)              (None, 592, 592, 1)  17          activation_8[0][0]               
+__________________________________________________________________________________________________
+activation_9 (Activation)       (None, 592, 592, 1)  0           conv2d_30[0][0]                  
+__________________________________________________________________________________________________
+multiply_4 (Multiply)           (None, 592, 592, 16) 0           batch_normalization_1[0][0]      
+                                                                 activation_9[0][0]               
+__________________________________________________________________________________________________
+concatenate_4 (Concatenate)     (None, 592, 592, 32) 0           conv2d_transpose_3[0][0]         
+                                                                 multiply_4[0][0]                 
+__________________________________________________________________________________________________
+drop_block2d_9 (DropBlock2D)    (None, 592, 592, 32) 700928      concatenate_4[0][0]              
+__________________________________________________________________________________________________
+conv2d_31 (Conv2D)              (None, 592, 592, 16) 4608        drop_block2d_9[0][0]             
+__________________________________________________________________________________________________
+batch_normalization_18 (BatchNo (None, 592, 592, 16) 64          conv2d_31[0][0]                  
+__________________________________________________________________________________________________
+conv2d_32 (Conv2D)              (None, 592, 592, 16) 2304        batch_normalization_18[0][0]     
+__________________________________________________________________________________________________
+batch_normalization_19 (BatchNo (None, 592, 592, 16) 64          conv2d_32[0][0]                  
+__________________________________________________________________________________________________
+conv2d_33 (Conv2D)              (None, 592, 592, 1)  17          batch_normalization_19[0][0]     
+==================================================================================================
+Total params: 5,039,387
+Trainable params: 5,035,419
+Non-trainable params: 3,968
+__________________________________________________________________________________________________
+Check: final output of the network:
+(None, 592, 592, 1)
+2022-05-09 15:11:05.440585: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-05-09 15:11:05.457342: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3200000000 Hz
+Epoch 1/150
+2022-05-09 15:11:14.049301: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2022-05-09 15:11:15.506785: W tensorflow/stream_executor/gpu/asm_compiler.cc:63] Running ptxas --version returned 256
+2022-05-09 15:11:15.625435: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2022-05-09 15:11:18.672937: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2022-05-09 15:11:19.111629: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+117/117 - 235s - loss: 0.9326 - accuracy: 0.4695 - val_loss: 3.5002 - val_accuracy: 0.1533
+Epoch 2/150
+117/117 - 14s - loss: 0.4427 - accuracy: 0.9196 - val_loss: 0.3034 - val_accuracy: 0.9183
+Epoch 3/150
+117/117 - 14s - loss: 0.2219 - accuracy: 0.9440 - val_loss: 0.3476 - val_accuracy: 0.9182
+Epoch 4/150
+117/117 - 14s - loss: 0.1608 - accuracy: 0.9481 - val_loss: 0.1965 - val_accuracy: 0.9312
+Epoch 5/150
+117/117 - 14s - loss: 0.1350 - accuracy: 0.9535 - val_loss: 0.1613 - val_accuracy: 0.9383
+Epoch 6/150
+117/117 - 14s - loss: 0.1213 - accuracy: 0.9579 - val_loss: 0.1222 - val_accuracy: 0.9518
+Epoch 7/150
+117/117 - 14s - loss: 0.1170 - accuracy: 0.9589 - val_loss: 0.1082 - val_accuracy: 0.9599
+Epoch 8/150
+117/117 - 14s - loss: 0.1085 - accuracy: 0.9607 - val_loss: 0.1032 - val_accuracy: 0.9630
+Epoch 9/150
+117/117 - 14s - loss: 0.1035 - accuracy: 0.9623 - val_loss: 0.1050 - val_accuracy: 0.9604
+Epoch 10/150
+117/117 - 14s - loss: 0.0997 - accuracy: 0.9636 - val_loss: 0.0932 - val_accuracy: 0.9656
+Epoch 11/150
+117/117 - 14s - loss: 0.0974 - accuracy: 0.9642 - val_loss: 0.0926 - val_accuracy: 0.9653
+Epoch 12/150
+117/117 - 14s - loss: 0.0965 - accuracy: 0.9646 - val_loss: 0.0891 - val_accuracy: 0.9661
+Epoch 13/150
+117/117 - 14s - loss: 0.0937 - accuracy: 0.9654 - val_loss: 0.0890 - val_accuracy: 0.9669
+Epoch 14/150
+117/117 - 14s - loss: 0.0920 - accuracy: 0.9659 - val_loss: 0.0939 - val_accuracy: 0.9650
+Epoch 15/150
+117/117 - 14s - loss: 0.0901 - accuracy: 0.9664 - val_loss: 0.0857 - val_accuracy: 0.9680
+Epoch 16/150
+117/117 - 14s - loss: 0.0906 - accuracy: 0.9656 - val_loss: 0.0882 - val_accuracy: 0.9671
+Epoch 17/150
+117/117 - 14s - loss: 0.0890 - accuracy: 0.9666 - val_loss: 0.0903 - val_accuracy: 0.9668
+Epoch 18/150
+117/117 - 14s - loss: 0.0873 - accuracy: 0.9673 - val_loss: 0.0831 - val_accuracy: 0.9690
+Epoch 19/150
+117/117 - 14s - loss: 0.0871 - accuracy: 0.9676 - val_loss: 0.0823 - val_accuracy: 0.9684
+Epoch 20/150
+117/117 - 14s - loss: 0.0860 - accuracy: 0.9676 - val_loss: 0.0808 - val_accuracy: 0.9693
+Epoch 21/150
+117/117 - 14s - loss: 0.0853 - accuracy: 0.9680 - val_loss: 0.0815 - val_accuracy: 0.9693
+Epoch 22/150
+117/117 - 14s - loss: 0.0837 - accuracy: 0.9682 - val_loss: 0.0782 - val_accuracy: 0.9700
+Epoch 23/150
+117/117 - 14s - loss: 0.0834 - accuracy: 0.9683 - val_loss: 0.0838 - val_accuracy: 0.9684
+Epoch 24/150
+117/117 - 14s - loss: 0.0844 - accuracy: 0.9678 - val_loss: 0.0784 - val_accuracy: 0.9704
+Epoch 25/150
+117/117 - 14s - loss: 0.0819 - accuracy: 0.9687 - val_loss: 0.0875 - val_accuracy: 0.9670
+Epoch 26/150
+117/117 - 14s - loss: 0.0822 - accuracy: 0.9688 - val_loss: 0.0774 - val_accuracy: 0.9706
+Epoch 27/150
+117/117 - 14s - loss: 0.0813 - accuracy: 0.9691 - val_loss: 0.0770 - val_accuracy: 0.9704
+Epoch 28/150
+117/117 - 14s - loss: 0.0804 - accuracy: 0.9692 - val_loss: 0.0766 - val_accuracy: 0.9706
+Epoch 29/150
+117/117 - 14s - loss: 0.0796 - accuracy: 0.9696 - val_loss: 0.0819 - val_accuracy: 0.9696
+Epoch 30/150
+117/117 - 14s - loss: 0.0790 - accuracy: 0.9695 - val_loss: 0.0755 - val_accuracy: 0.9703
+Epoch 31/150
+117/117 - 14s - loss: 0.0787 - accuracy: 0.9699 - val_loss: 0.0739 - val_accuracy: 0.9711
+Epoch 32/150
+117/117 - 14s - loss: 0.0773 - accuracy: 0.9702 - val_loss: 0.0752 - val_accuracy: 0.9707
+Epoch 33/150
+117/117 - 14s - loss: 0.0772 - accuracy: 0.9702 - val_loss: 0.0745 - val_accuracy: 0.9713
+Epoch 34/150
+117/117 - 14s - loss: 0.0763 - accuracy: 0.9705 - val_loss: 0.0743 - val_accuracy: 0.9712
+Epoch 35/150
+117/117 - 14s - loss: 0.0750 - accuracy: 0.9708 - val_loss: 0.0728 - val_accuracy: 0.9720
+Epoch 36/150
+117/117 - 14s - loss: 0.0745 - accuracy: 0.9710 - val_loss: 0.0710 - val_accuracy: 0.9722
+Epoch 37/150
+117/117 - 14s - loss: 0.0737 - accuracy: 0.9711 - val_loss: 0.0726 - val_accuracy: 0.9714
+Epoch 38/150
+117/117 - 14s - loss: 0.0738 - accuracy: 0.9712 - val_loss: 0.0721 - val_accuracy: 0.9719
+Epoch 39/150
+117/117 - 14s - loss: 0.0725 - accuracy: 0.9715 - val_loss: 0.0699 - val_accuracy: 0.9727
+Epoch 40/150
+117/117 - 14s - loss: 0.0718 - accuracy: 0.9717 - val_loss: 0.0709 - val_accuracy: 0.9722
+Epoch 41/150
+117/117 - 14s - loss: 0.0709 - accuracy: 0.9719 - val_loss: 0.0722 - val_accuracy: 0.9712
+Epoch 42/150
+117/117 - 14s - loss: 0.0700 - accuracy: 0.9722 - val_loss: 0.0684 - val_accuracy: 0.9733
+Epoch 43/150
+117/117 - 14s - loss: 0.0691 - accuracy: 0.9725 - val_loss: 0.0681 - val_accuracy: 0.9733
+Epoch 44/150
+117/117 - 14s - loss: 0.0694 - accuracy: 0.9724 - val_loss: 0.0709 - val_accuracy: 0.9725
+Epoch 45/150
+117/117 - 14s - loss: 0.0680 - accuracy: 0.9728 - val_loss: 0.0680 - val_accuracy: 0.9731
+Epoch 46/150
+117/117 - 14s - loss: 0.0676 - accuracy: 0.9729 - val_loss: 0.0793 - val_accuracy: 0.9714
+Epoch 47/150
+117/117 - 14s - loss: 0.0666 - accuracy: 0.9733 - val_loss: 0.0667 - val_accuracy: 0.9738
+Epoch 48/150
+117/117 - 14s - loss: 0.0665 - accuracy: 0.9734 - val_loss: 0.0673 - val_accuracy: 0.9739
+Epoch 49/150
+117/117 - 14s - loss: 0.0655 - accuracy: 0.9737 - val_loss: 0.0682 - val_accuracy: 0.9735
+Epoch 50/150
+117/117 - 14s - loss: 0.0649 - accuracy: 0.9738 - val_loss: 0.0686 - val_accuracy: 0.9733
+Epoch 51/150
+117/117 - 14s - loss: 0.0638 - accuracy: 0.9742 - val_loss: 0.0666 - val_accuracy: 0.9741
+Epoch 52/150
+117/117 - 14s - loss: 0.0636 - accuracy: 0.9743 - val_loss: 0.0663 - val_accuracy: 0.9745
+Epoch 53/150
+117/117 - 14s - loss: 0.0633 - accuracy: 0.9745 - val_loss: 0.0648 - val_accuracy: 0.9746
+Epoch 54/150
+117/117 - 14s - loss: 0.0628 - accuracy: 0.9746 - val_loss: 0.0678 - val_accuracy: 0.9740
+Epoch 55/150
+117/117 - 14s - loss: 0.0618 - accuracy: 0.9749 - val_loss: 0.0707 - val_accuracy: 0.9739
+Epoch 56/150
+117/117 - 14s - loss: 0.0616 - accuracy: 0.9752 - val_loss: 0.0645 - val_accuracy: 0.9753
+Epoch 57/150
+117/117 - 14s - loss: 0.0605 - accuracy: 0.9755 - val_loss: 0.0641 - val_accuracy: 0.9756
+Epoch 58/150
+117/117 - 14s - loss: 0.0597 - accuracy: 0.9758 - val_loss: 0.0644 - val_accuracy: 0.9753
+Epoch 59/150
+117/117 - 14s - loss: 0.0599 - accuracy: 0.9758 - val_loss: 0.0661 - val_accuracy: 0.9749
+Epoch 60/150
+117/117 - 14s - loss: 0.0589 - accuracy: 0.9762 - val_loss: 0.0725 - val_accuracy: 0.9720
+Epoch 61/150
+117/117 - 14s - loss: 0.0581 - accuracy: 0.9765 - val_loss: 0.0660 - val_accuracy: 0.9757
+Epoch 62/150
+117/117 - 14s - loss: 0.0575 - accuracy: 0.9767 - val_loss: 0.0636 - val_accuracy: 0.9762
+Epoch 63/150
+117/117 - 14s - loss: 0.0572 - accuracy: 0.9769 - val_loss: 0.0632 - val_accuracy: 0.9758
+Epoch 64/150
+117/117 - 14s - loss: 0.0565 - accuracy: 0.9771 - val_loss: 0.0633 - val_accuracy: 0.9765
+Epoch 65/150
+117/117 - 14s - loss: 0.0558 - accuracy: 0.9774 - val_loss: 0.0685 - val_accuracy: 0.9743
+Epoch 66/150
+117/117 - 14s - loss: 0.0549 - accuracy: 0.9776 - val_loss: 0.0634 - val_accuracy: 0.9766
+Epoch 67/150
+117/117 - 14s - loss: 0.0558 - accuracy: 0.9773 - val_loss: 0.0639 - val_accuracy: 0.9764
+Epoch 68/150
+117/117 - 14s - loss: 0.0545 - accuracy: 0.9780 - val_loss: 0.0641 - val_accuracy: 0.9764
+Epoch 69/150
+117/117 - 14s - loss: 0.0539 - accuracy: 0.9781 - val_loss: 0.0648 - val_accuracy: 0.9761
+Epoch 70/150
+117/117 - 14s - loss: 0.0533 - accuracy: 0.9784 - val_loss: 0.0624 - val_accuracy: 0.9771
+Epoch 71/150
+117/117 - 14s - loss: 0.0527 - accuracy: 0.9786 - val_loss: 0.0631 - val_accuracy: 0.9770
+Epoch 72/150
+117/117 - 14s - loss: 0.0534 - accuracy: 0.9785 - val_loss: 0.0651 - val_accuracy: 0.9758
+Epoch 73/150
+117/117 - 14s - loss: 0.0527 - accuracy: 0.9787 - val_loss: 0.0627 - val_accuracy: 0.9772
+Epoch 74/150
+117/117 - 14s - loss: 0.0514 - accuracy: 0.9791 - val_loss: 0.0635 - val_accuracy: 0.9768
+Epoch 75/150
+117/117 - 14s - loss: 0.0513 - accuracy: 0.9792 - val_loss: 0.0627 - val_accuracy: 0.9776
+Epoch 76/150
+117/117 - 14s - loss: 0.0511 - accuracy: 0.9793 - val_loss: 0.0641 - val_accuracy: 0.9769
+Epoch 77/150
+117/117 - 14s - loss: 0.0511 - accuracy: 0.9794 - val_loss: 0.0630 - val_accuracy: 0.9775
+Epoch 78/150
+117/117 - 14s - loss: 0.0503 - accuracy: 0.9796 - val_loss: 0.0639 - val_accuracy: 0.9765
+Epoch 79/150
+117/117 - 14s - loss: 0.0492 - accuracy: 0.9800 - val_loss: 0.0650 - val_accuracy: 0.9764
+Epoch 80/150
+117/117 - 14s - loss: 0.0489 - accuracy: 0.9801 - val_loss: 0.0626 - val_accuracy: 0.9777
+Epoch 81/150
+117/117 - 14s - loss: 0.0486 - accuracy: 0.9802 - val_loss: 0.0639 - val_accuracy: 0.9769
+Epoch 82/150
+117/117 - 14s - loss: 0.0497 - accuracy: 0.9801 - val_loss: 0.0636 - val_accuracy: 0.9779
+Epoch 83/150
+117/117 - 14s - loss: 0.0477 - accuracy: 0.9806 - val_loss: 0.0633 - val_accuracy: 0.9775
+Epoch 84/150
+117/117 - 14s - loss: 0.0474 - accuracy: 0.9807 - val_loss: 0.0640 - val_accuracy: 0.9779
+Epoch 85/150
+117/117 - 14s - loss: 0.0472 - accuracy: 0.9808 - val_loss: 0.0669 - val_accuracy: 0.9754
+Epoch 86/150
+117/117 - 14s - loss: 0.0469 - accuracy: 0.9809 - val_loss: 0.0649 - val_accuracy: 0.9773
+Epoch 87/150
+117/117 - 14s - loss: 0.0467 - accuracy: 0.9810 - val_loss: 0.0638 - val_accuracy: 0.9774
+Epoch 88/150
+117/117 - 14s - loss: 0.0470 - accuracy: 0.9811 - val_loss: 0.0663 - val_accuracy: 0.9763
+Epoch 89/150
+117/117 - 14s - loss: 0.0459 - accuracy: 0.9813 - val_loss: 0.0650 - val_accuracy: 0.9770
+Epoch 90/150
+117/117 - 14s - loss: 0.0458 - accuracy: 0.9814 - val_loss: 0.0629 - val_accuracy: 0.9784
+Epoch 91/150
+117/117 - 14s - loss: 0.0454 - accuracy: 0.9816 - val_loss: 0.0624 - val_accuracy: 0.9786
+Epoch 92/150
+117/117 - 14s - loss: 0.0452 - accuracy: 0.9817 - val_loss: 0.0633 - val_accuracy: 0.9771
+Epoch 93/150
+117/117 - 14s - loss: 0.0451 - accuracy: 0.9818 - val_loss: 0.0701 - val_accuracy: 0.9767
+Epoch 94/150
+117/117 - 14s - loss: 0.0446 - accuracy: 0.9819 - val_loss: 0.0617 - val_accuracy: 0.9782
+Epoch 95/150
+117/117 - 14s - loss: 0.0441 - accuracy: 0.9822 - val_loss: 0.0621 - val_accuracy: 0.9774
+Epoch 96/150
+117/117 - 14s - loss: 0.0437 - accuracy: 0.9823 - val_loss: 0.0628 - val_accuracy: 0.9784
+Epoch 97/150
+117/117 - 14s - loss: 0.0435 - accuracy: 0.9823 - val_loss: 0.0622 - val_accuracy: 0.9781
+Epoch 98/150
+117/117 - 14s - loss: 0.0431 - accuracy: 0.9825 - val_loss: 0.0643 - val_accuracy: 0.9788
+Epoch 99/150
+117/117 - 14s - loss: 0.0428 - accuracy: 0.9826 - val_loss: 0.0620 - val_accuracy: 0.9790
+Epoch 100/150
+117/117 - 14s - loss: 0.0427 - accuracy: 0.9827 - val_loss: 0.0622 - val_accuracy: 0.9784
+Epoch 101/150
+117/117 - 14s - loss: 0.0421 - accuracy: 0.9830 - val_loss: 0.0628 - val_accuracy: 0.9790
+Epoch 102/150
+117/117 - 14s - loss: 0.0419 - accuracy: 0.9830 - val_loss: 0.0622 - val_accuracy: 0.9783
+Epoch 103/150
+117/117 - 14s - loss: 0.0427 - accuracy: 0.9828 - val_loss: 0.0647 - val_accuracy: 0.9776
+Epoch 104/150
+117/117 - 14s - loss: 0.0414 - accuracy: 0.9832 - val_loss: 0.0698 - val_accuracy: 0.9766
+Epoch 105/150
+117/117 - 14s - loss: 0.0426 - accuracy: 0.9830 - val_loss: 0.0623 - val_accuracy: 0.9792
+Epoch 106/150
+117/117 - 14s - loss: 0.0410 - accuracy: 0.9834 - val_loss: 0.0629 - val_accuracy: 0.9787
+Epoch 107/150
+117/117 - 14s - loss: 0.0410 - accuracy: 0.9835 - val_loss: 0.0615 - val_accuracy: 0.9791
+Epoch 108/150
+117/117 - 14s - loss: 0.0418 - accuracy: 0.9832 - val_loss: 0.0624 - val_accuracy: 0.9791
+Epoch 109/150
+117/117 - 14s - loss: 0.0405 - accuracy: 0.9836 - val_loss: 0.0624 - val_accuracy: 0.9792
+Epoch 110/150
+117/117 - 14s - loss: 0.0407 - accuracy: 0.9836 - val_loss: 0.0638 - val_accuracy: 0.9793
+Epoch 111/150
+117/117 - 14s - loss: 0.0397 - accuracy: 0.9840 - val_loss: 0.0605 - val_accuracy: 0.9793
+Epoch 112/150
+117/117 - 14s - loss: 0.0397 - accuracy: 0.9839 - val_loss: 0.0629 - val_accuracy: 0.9793
+Epoch 113/150
+117/117 - 14s - loss: 0.0396 - accuracy: 0.9840 - val_loss: 0.0621 - val_accuracy: 0.9794
+Epoch 114/150
+117/117 - 14s - loss: 0.0392 - accuracy: 0.9841 - val_loss: 0.0710 - val_accuracy: 0.9766
+Epoch 115/150
+117/117 - 14s - loss: 0.0391 - accuracy: 0.9841 - val_loss: 0.0621 - val_accuracy: 0.9789
+Epoch 116/150
+117/117 - 14s - loss: 0.0403 - accuracy: 0.9839 - val_loss: 0.0641 - val_accuracy: 0.9794
+Epoch 117/150
+117/117 - 14s - loss: 0.0395 - accuracy: 0.9841 - val_loss: 0.0669 - val_accuracy: 0.9776
+Epoch 118/150
+117/117 - 14s - loss: 0.0394 - accuracy: 0.9842 - val_loss: 0.0629 - val_accuracy: 0.9794
+Epoch 119/150
+117/117 - 14s - loss: 0.0384 - accuracy: 0.9845 - val_loss: 0.0633 - val_accuracy: 0.9792
+Epoch 120/150
+117/117 - 14s - loss: 0.0383 - accuracy: 0.9845 - val_loss: 0.0631 - val_accuracy: 0.9794
+Epoch 121/150
+117/117 - 14s - loss: 0.0381 - accuracy: 0.9845 - val_loss: 0.0623 - val_accuracy: 0.9795
+Epoch 122/150
+117/117 - 14s - loss: 0.0396 - accuracy: 0.9842 - val_loss: 0.0619 - val_accuracy: 0.9782
+Epoch 123/150
+117/117 - 14s - loss: 0.0377 - accuracy: 0.9847 - val_loss: 0.0640 - val_accuracy: 0.9794
+Epoch 124/150
+117/117 - 14s - loss: 0.0379 - accuracy: 0.9847 - val_loss: 0.0648 - val_accuracy: 0.9797
+Epoch 125/150
+117/117 - 14s - loss: 0.0377 - accuracy: 0.9848 - val_loss: 0.0608 - val_accuracy: 0.9800
+Epoch 126/150
+117/117 - 14s - loss: 0.0384 - accuracy: 0.9846 - val_loss: 0.0636 - val_accuracy: 0.9799
+Epoch 127/150
+117/117 - 14s - loss: 0.0375 - accuracy: 0.9849 - val_loss: 0.0614 - val_accuracy: 0.9794
+Epoch 128/150
+117/117 - 14s - loss: 0.0374 - accuracy: 0.9849 - val_loss: 0.0598 - val_accuracy: 0.9800
+Epoch 129/150
+117/117 - 14s - loss: 0.0369 - accuracy: 0.9851 - val_loss: 0.0627 - val_accuracy: 0.9794
+Epoch 130/150
+117/117 - 14s - loss: 0.0367 - accuracy: 0.9851 - val_loss: 0.0611 - val_accuracy: 0.9801
+Epoch 131/150
+117/117 - 14s - loss: 0.0362 - accuracy: 0.9854 - val_loss: 0.0627 - val_accuracy: 0.9796
+Epoch 132/150
+117/117 - 14s - loss: 0.0362 - accuracy: 0.9854 - val_loss: 0.0629 - val_accuracy: 0.9795
+Epoch 133/150
+117/117 - 14s - loss: 0.0368 - accuracy: 0.9853 - val_loss: 0.0629 - val_accuracy: 0.9774
+Epoch 134/150
+117/117 - 14s - loss: 0.0364 - accuracy: 0.9854 - val_loss: 0.0639 - val_accuracy: 0.9797
+Epoch 135/150
+117/117 - 14s - loss: 0.0361 - accuracy: 0.9855 - val_loss: 0.0643 - val_accuracy: 0.9801
+Epoch 136/150
+117/117 - 14s - loss: 0.0355 - accuracy: 0.9857 - val_loss: 0.0605 - val_accuracy: 0.9798
+Epoch 137/150
+117/117 - 14s - loss: 0.0356 - accuracy: 0.9857 - val_loss: 0.0622 - val_accuracy: 0.9800
+Epoch 138/150
+117/117 - 14s - loss: 0.0351 - accuracy: 0.9858 - val_loss: 0.0628 - val_accuracy: 0.9802
+Epoch 139/150
+117/117 - 14s - loss: 0.0355 - accuracy: 0.9857 - val_loss: 0.0631 - val_accuracy: 0.9800
+Epoch 140/150
+117/117 - 14s - loss: 0.0349 - accuracy: 0.9859 - val_loss: 0.0638 - val_accuracy: 0.9792
+Epoch 141/150
+117/117 - 14s - loss: 0.0346 - accuracy: 0.9860 - val_loss: 0.0629 - val_accuracy: 0.9802
+Epoch 142/150
+117/117 - 14s - loss: 0.0341 - accuracy: 0.9862 - val_loss: 0.0618 - val_accuracy: 0.9798
+Epoch 143/150
+117/117 - 14s - loss: 0.0340 - accuracy: 0.9863 - val_loss: 0.0626 - val_accuracy: 0.9805
+Epoch 144/150
+117/117 - 14s - loss: 0.0341 - accuracy: 0.9863 - val_loss: 0.0630 - val_accuracy: 0.9803
+Epoch 145/150
+117/117 - 14s - loss: 0.0336 - accuracy: 0.9864 - val_loss: 0.0618 - val_accuracy: 0.9803
+Epoch 146/150
+117/117 - 14s - loss: 0.0339 - accuracy: 0.9864 - val_loss: 0.0638 - val_accuracy: 0.9803
+Epoch 147/150
+117/117 - 14s - loss: 0.0334 - accuracy: 0.9865 - val_loss: 0.0634 - val_accuracy: 0.9803
+Epoch 148/150
+117/117 - 14s - loss: 0.0334 - accuracy: 0.9865 - val_loss: 0.0641 - val_accuracy: 0.9801
+Epoch 149/150
+117/117 - 14s - loss: 0.0331 - accuracy: 0.9866 - val_loss: 0.0652 - val_accuracy: 0.9793
+Epoch 150/150
+117/117 - 14s - loss: 0.0329 - accuracy: 0.9867 - val_loss: 0.0646 - val_accuracy: 0.9799
+--- 9.5367431640625e-07 seconds for training---
+None
+None
